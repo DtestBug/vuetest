@@ -38,7 +38,14 @@ const routes = [
       {
         path: '/template2',
         name: 'Template2',
-        component: () => import(/* webpackChunkName: "template2" */ '../views/Template2.vue')
+        component: () => import(/* webpackChunkName: "template2" */ '../views/Template2.vue'),
+
+      },
+
+      {
+        path: '/createData',
+        name: 'createData',
+        component: () => import(/* webpackChunkName: "createData" */ '../views/create_pets.vue'),
       },
 
       {

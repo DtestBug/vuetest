@@ -146,6 +146,7 @@ export default {
     padding: 0;
     font-family: sans-serif;
     background-size: cover;
+    text-align: center;
 }
 
 .login_pic {
@@ -200,6 +201,7 @@ h5 {
   // 登录按钮设置
   margin-bottom: 0;
   padding: 10px;
+  text-align: center;
 }
 
 #register_btn {
@@ -227,6 +229,7 @@ h5 {
   color: #d2f707;
   outline: none;
   background: transparent;
+
   border: none;
   border-bottom: 1px solid #00ff00; /*输入框下边框*/
 }

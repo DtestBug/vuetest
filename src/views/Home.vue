@@ -131,14 +131,15 @@ export default {
 
 // 上方盒子1
 .box1 {
-  width: 100%;
+  width: 99%;
+  left: 0.5%;
   height: 15%;
   position: absolute;
   padding: 15px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.9);
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
+  border-radius: 7px;
 }
 
 // 下方盒子2
@@ -155,10 +156,10 @@ export default {
 .box2_menu {
 
   position: absolute;
-
-  width: 15%;
-  height: 100%;
-
+  left: 0.5%;
+  width: 16%;
+  height: 98%;
+  top: 1%;
   background: rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
@@ -180,10 +181,10 @@ export default {
 
 .box2_data1 {
   position: absolute;
-  left: 15%;
-  width: 85%;
-  height: 100%;
-
+  left: 17%;
+  width: 82.5%;
+  height: 98%;
+  top: 1%;
   background: rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
@@ -223,6 +224,7 @@ export default {
   background: transparent;
   border: none;
   border-bottom:  solid black; /*输入框下边框*/
+  border-radius: 4px;
 }
 
 
