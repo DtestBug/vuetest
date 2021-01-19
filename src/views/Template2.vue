@@ -219,17 +219,16 @@ export default {
 
         // 查询
         onSubmit() {
+            
             const res = this.$http
                 .get("/pets/" + this.formInline.name) // 请求userdata/{参数}接口  this.formInline:{usernmae}
-                .catch((e) => {
-                    return { data: { code: "404" } };
-                })
+
                 .then((res) => {
                     // 数据显示到盒子
                     var res1 = res.data;
                     res.tableData = res1;
-                    self.tableData = res;
-                    console.log(res);
+                    this.tableData = [res1];
+                    console.log(self.tableData);
 
                     // 数据不存在弹框
                     if (res.data.code == 404)
@@ -238,7 +237,10 @@ export default {
                             type: "error",
                         });
                     
-                });
+                })
+                .catch((e) => {
+                    return { data: { code: "404" } };
+                })
         },
 
         delSubmit() {
